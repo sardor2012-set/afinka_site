@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to send data from an HTML form to email</title>
+
+    <!-- custom css style link  -->
+    <link rel="stylesheet" href="style2.css">
+
+    <!-- font link  -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/aa11b2d154.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header><a style="font-size: 50px; margin-left: 25px;" href="./index.html"><i class="fa-solid fa-arrow-left fa-beat" style="color: #ffffff;"></i></a></header>
+
+<!-- contacts section start  -->
+
+<section class="contacts">
+
+    <h2 class="heading"><span>Связь</span> с нами <i class="fa-solid fa-phone fa-shake"></i></h2>  
+
+    <div class="row">
+
+        <div class="img">
+            <img src="img/contacts-img.png">
+        </div>
+
+<form action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="66e68d79-493b-42cd-8801-644ba3c411a9">
+
+            <span>Имя <i class="fa-solid fa-signature"></i></span>
+            <input type="text" name="name" id="" class="box" required placeholder="Введите свое имя.." autocomplete="off">
+
+            <span>Email <i class="fa-solid fa-at"></i></span>
+            <input type="email" name="email" id="" class="box" required placeholder="Введите адрес электронной почты.." autocomplete="off">
+
+            <span>Выберите подходящую категорию <i class="fa-solid fa-list"></i></span>
+            <select name="cotegorey" id="" class="box" required>
+                <option value="" disabled selected>Выберите подходящую категорию</option>
+                <option value="problem">Проблемы с сайтом</option>
+                <option value="help">Помощь</option>
+                <option value="bag">Баг</option>
+                <option value="notcoin">Не получил коины</option>
+                <option value="work">Сотрудничество</option>
+            </select>
+
+            <span>Ваш пол <i class="fa-solid fa-venus-mars"></i></span>
+            <div style="font-size: 14px; margin: 10px;" class="pol">
+                <div style="margin-bottom: 5px;">
+                <input type="radio" name="gender" id="male" value="male">
+                <label style="color: #ffffff; margin: 1px;" for="men">Мужской</label>
+                </div>
+
+                <div>
+                <input type="radio" name="gender" id="female" value="female">
+                <label style="color: #ffffff; margin: 1px;" for="woomwen
+                 ">Женский</label>
+                 </div>
+            </div>
+
+            <div class="text2">
+                <span style="margin-top: 20px;">Введите текст ниже для которого вам нужен ответ! <i class="fa-solid fa-circle-down fa-bounce"></i></span>
+
+                <textarea class="text" required placeholder="Введите текст..." name="text" id="wert"></textarea>
+
+            </div>
+
+            <input type="submit" value="Отправить" class="btn" name="send">
+            <h2 class="sd">By Afinka <i class="fa-regular fa-gem fa-beat" style="color: #74C0FC;"></i></h2>
+            
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contacts section end  -->
+
+</body>
+
+</html>
